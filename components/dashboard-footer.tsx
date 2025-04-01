@@ -1,4 +1,4 @@
-import { ExternalLink, Info } from "lucide-react";
+import { ExternalLink, Info, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -35,6 +35,14 @@ export function DashboardFooter() {
             className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
           >
             Ataraxis AI Website <ExternalLink className="h-3 w-3" />
+          </a>
+          <a
+            href="https://github.com/aardvarkzone/Ataraxis-AI-Demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
+          >
+            GitHub <Github className="h-3 w-3" />
           </a>
           <Dialog>
             <DialogTrigger asChild>
