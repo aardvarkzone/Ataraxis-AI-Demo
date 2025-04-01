@@ -43,6 +43,8 @@ export function ERStatusPieChart() {
             category="value"
             colors={["green", "red", "gray"]}
             valueFormatter={(value) => `${value}%`}
+            showLabel={true}
+            label="N=3502"
           />
         </ChartWrapper>
       </CardContent>
