@@ -10,6 +10,7 @@ import { ERStatusPieChart } from "@/components/charts/er-receptor-pie-chart";
 import { DashboardFooter } from "@/components/dashboard-footer";
 import { RecurrenceProbabilityChart } from "@/components/charts/risk-score-scatter";
 import { FilterControls } from "@/components/filter-controls";
+import { StudySummary } from "@/components/study-summary";
 
 export default function Dashboard() {
   const [subtype, setSubtype] = useState("all");
@@ -22,9 +23,6 @@ export default function Dashboard() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-            <p className="text-muted-foreground">
-              Comparing Ataraxis AI and Oncotype DX in Predictive Accuracy
-            </p>
           </div>
           <FilterControls
             subtype={subtype}
@@ -34,6 +32,7 @@ export default function Dashboard() {
           />
         </div>
         <OverviewCards />
+        <StudySummary />
         <div className="grid gap-6 md:grid-cols-2">
           <PredictiveAccuracyChart subtype={subtype} cohort={cohort} />
           <HazardRatioChart subtype={subtype} cohort={cohort} />
