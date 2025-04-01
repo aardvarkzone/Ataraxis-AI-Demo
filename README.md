@@ -30,10 +30,10 @@ git clone <repository-url>
 cd ataraxis-dashboard
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start the development server
-npm run dev
+pnpm run dev
 ```
 
 ## Disclaimer
