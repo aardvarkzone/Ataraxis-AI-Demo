@@ -11,6 +11,7 @@ import { DashboardFooter } from "@/components/dashboard-footer";
 import { RecurrenceProbabilityChart } from "@/components/charts/risk-score-scatter";
 import { FilterControls } from "@/components/filter-controls";
 import { StudySummary } from "@/components/study-summary";
+import { ResearchVideos } from "@/components/research-videos";
 
 export default function Dashboard() {
   const [subtype, setSubtype] = useState("all");
@@ -33,15 +34,16 @@ export default function Dashboard() {
         </div>
         <OverviewCards />
         <StudySummary />
+        <ResearchVideos />
         <div className="grid gap-6 md:grid-cols-2">
           <PredictiveAccuracyChart subtype={subtype} cohort={cohort} />
           <HazardRatioChart subtype={subtype} cohort={cohort} />
         </div>
-        <CohortAccuracyChart subtype={subtype} cohort={cohort} />
         <div className="grid gap-6 md:grid-cols-2">
           <RecurrenceProbabilityChart />
           <ERStatusPieChart />
         </div>
+        <CohortAccuracyChart subtype={subtype} cohort={cohort} />
       </main>
       <DashboardFooter />
     </div>

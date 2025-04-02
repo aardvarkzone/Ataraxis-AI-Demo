@@ -28,6 +28,16 @@ export function StudySummary() {
           test could significantly improve prognostic accuracy and clinical
           decision-making.
         </p>
+        <div className="mt-4">
+          <h3 className="text-sm font-medium mb-2">Key definitions:</h3>
+          <ul className="list-disc pl-4 text-sm text-muted-foreground space-y-2">
+            <li><strong>Ataraxis AI:</strong> An AI-driven tool focused on integrating multi-modal data (like digital pathology and clinical information) to predict breast cancer recurrence</li>
+            <li><strong>Oncotype DX:</strong> A genomic assay used to assess the risk of cancer recurrence and guide chemotherapy decisions</li>
+            <li><strong>C-Index:</strong> Statistical measure of predictive accuracy, ranging from 0.5 (random) to 1.0 (perfect prediction)</li>
+            <li><strong>ER Receptor:</strong> Protein in breast cancer cells that responds to estrogen and helps determine hormone therapy effectiveness</li>
+            <li><strong>Hazard Ratio (HR):</strong> Measure comparing event risk between groups, with HR &gt; 1 indicating higher risk in treatment group</li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );
