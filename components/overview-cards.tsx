@@ -2,7 +2,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Database, TrendingUp, Shuffle } from "lucide-react";
-import CountUp from 'react-countup';
 
 export function OverviewCards() {
   return (
@@ -15,9 +14,7 @@ export function OverviewCards() {
           <Users className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">
-            <CountUp end={8161} separator="," duration={2.5} enableScrollSpy />
-          </div>
+          <div className="text-2xl font-bold">8,161</div>
           <p className="text-xs text-muted-foreground">Across 15 cohorts</p>
         </CardContent>
       </Card>
@@ -29,9 +26,7 @@ export function OverviewCards() {
           <Database className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">
-            <CountUp end={5} duration={2} enableScrollSpy />
-          </div>
+          <div className="text-2xl font-bold">5</div>
           <p className="text-xs text-muted-foreground">
             Independent validation cohorts
           </p>
@@ -45,9 +40,7 @@ export function OverviewCards() {
           <TrendingUp className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold text-green-500">
-            +<CountUp end={30} duration={2.2} enableScrollSpy />%
-          </div>
+          <div className="text-2xl font-bold text-green-500">+30%</div>
           <p className="text-xs text-muted-foreground">
             Compared to Oncotype DX
           </p>
@@ -61,9 +54,7 @@ export function OverviewCards() {
           <Shuffle className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">
-            <CountUp end={77.6} decimals={1} duration={2.5} enableScrollSpy />%
-          </div>
+          <div className="text-2xl font-bold">77.6%</div>
           <p className="text-xs text-muted-foreground">
             Of intermediate risk patients
           </p>
